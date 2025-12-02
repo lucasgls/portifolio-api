@@ -1,0 +1,19 @@
+gi# config app
+spring.application.name=portifolio-api
+
+# config banco de dados (docker local)
+spring.datasource.url=jdbc:postgresql://localhost:5432/portfolio_db
+spring.datasource.username=postgres
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# config JPA e Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.open-in-view=false
+
+# basic auth
+security.user.name=${PORTFOLIO_USER:lucas}
+security.user.password=${PORTFOLIO_PASSWORD:123} (coloque sua senha)
