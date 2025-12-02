@@ -13,3 +13,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.open-in-view=false
+
+# basic auth
+security.user.name=${PORTFOLIO_USER:lucas}
+security.user.password=${PORTFOLIO_PASSWORD:1128}
