@@ -1,4 +1,4 @@
-# config app
+gi# config app
 spring.application.name=portifolio-api
 
 # config banco de dados (docker local)
@@ -16,4 +16,4 @@ spring.jpa.open-in-view=false
 
 # basic auth
 security.user.name=${PORTFOLIO_USER:lucas}
-security.user.password=${PORTFOLIO_PASSWORD:1128}
+security.user.password=${PORTFOLIO_PASSWORD:123} (coloque sua senha)
