@@ -12,11 +12,10 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor // Injeção de dependência via construtor (Padrão Ouro)
+@RequiredArgsConstructor
 @Slf4j
 public class ProjetoService {
 
-    // "final" garante imutabilidade e segurança
     private final ProjetoRepository repository;
 
     @Transactional
