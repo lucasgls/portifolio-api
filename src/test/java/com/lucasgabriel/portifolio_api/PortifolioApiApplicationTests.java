@@ -9,7 +9,7 @@ import org.springframework.test.context.TestPropertySource;
 @SpringBootTest
 @EnableAutoConfiguration(exclude = SecurityAutoConfiguration.class)
 @TestPropertySource(properties = {
-        "spring.datasource.url=jdbc:h2:mem:testdb",
+        "spring.datasource.url=jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE",
         "spring.datasource.driver-class-name=org.h2.Driver",
         "spring.datasource.username=sa",
         "spring.datasource.password=",
@@ -17,8 +17,8 @@ import org.springframework.test.context.TestPropertySource;
         "spring.jpa.hibernate.ddl-auto=create-drop",
         "spring.jpa.show-sql=false",
         "spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect",
-        "ADMIN_USERNAME=admin",
-        "ADMIN_PASSWORD=admin123"
+        "security.user.name=admin",
+        "security.user.password=admin123"
 })
 class PortifolioApiApplicationTests {
 
